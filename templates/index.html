@@ -1,15 +1,23 @@
-{% extends "base.html" %}
+<!DOCTYPE html>
 
-{% block content %}
-<h1>Blog Posts</h1>
-<form hx-post="{{ url_for('create') }}" hx-target="#posts" hx-swap="beforeend" method="post">
-    <input type="text" name="title" placeholder="Title" required>
-    <textarea name="content" placeholder="Content" required></textarea>
-    <button type="submit" class="btn btn-primary">Create</button>
-</form>
-<div id="posts">
-    {% for post in posts %}
-        {% include 'post_snippet.html' %}
-    {% endfor %}
-</div>
-{% endblock %}
+<html>
+<head>
+    <title>Hack News</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="static/htmx.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+
+</head>
+<body>
+
+    <section class="section">
+        <div class="container">
+            <h1 class="title">HATEOS with no library </h1> 
+            
+            <h2 get="/replace">   example click here to load from server </h2>
+        </div>
+    </section>
+</body>
+    <script src="static/script.js"></script>
+</html>
+                                                            

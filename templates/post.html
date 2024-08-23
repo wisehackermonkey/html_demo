@@ -1,11 +1,10 @@
-{% extends "base.html" %}
-
-{% block content %}
-    <div class="post">
-        <h1>{{ post.title }}</h1>
-        <p>{{ post.content }}</p>
-        <div class="post-buttons">
-                <a href="{{ url_for('edit', post_id=post.id) }}" class="btn btn-primary">Edit</a>
-        </div>
-    </div>
-{% endblock %}
+{% if post_title %}
+<div class="post">
+    <table>
+        <th>Post</th>
+        <tr>
+            <td>post_title</td>
+        </tr>
+    </table>
+</div>
+{% endif %}
