@@ -20,12 +20,15 @@ def format_posts(titles):
     r = ""
     for title in titles:
         r += f"""
-        <tr>
+        <div onclick>
+        <tr class="column card">
             <td>{title}</td>
-        </tr>"""
+        </tr>
+        </dev>
+        """
     return f"""
     <div class="post">
-        <table>
+        <table class="columns">
             <th>Post</th>
             {r}
         </table>
